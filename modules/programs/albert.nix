@@ -1,12 +1,12 @@
 {
+  config,
   pkgs,
-  lib,
   ...
 }:
 {
   config = {
     # Albert package
-    home.packages = [ pkgs.albert ];
+    home.packages = with pkgs; [ albert ];
 
     # Source albert configuration from the home-manager store
     xdg.configFile."albert/config".text = ''

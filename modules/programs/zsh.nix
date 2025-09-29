@@ -1,11 +1,12 @@
 {
+  config,
   pkgs,
-  lib,
   ...
 }:
 {
-  home.packages = [ pkgs.zsh ];
-  programs.zsh = {
+  config.home.packages = with pkgs; [ zsh ];
+
+  config.programs.zsh = {
     enable = true;
     enableCompletion = true;
     autosuggestion.enable = true;

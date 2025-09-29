@@ -1,9 +1,10 @@
 {
+  config,
   pkgs,
-  lib,
   ...
 }:
 {
-  # Ensure Brave browser package installed
-  home.packages = [ pkgs.brave ];
+  config = {
+    home.packages = with pkgs; [ brave ];
+  }
 }

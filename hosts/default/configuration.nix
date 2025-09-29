@@ -10,11 +10,11 @@ in
   nixpkgs.overlays = [
     (
       f: p: { zapret-data = 
-      p.callPackage ../../overrides/zapret-data.nix { }; 
+      p.callPackage ../../packages/nixos/zapret-data.nix { }; 
     })
     (
       f: p: { elegant-grub-theme = 
-      p.callPackage ../../overrides/elegant-grub-theme.nix { }; 
+      p.callPackage ../../packages/nixos/elegant-grub-theme.nix { }; 
     })
   ];
 

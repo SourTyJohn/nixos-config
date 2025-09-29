@@ -1,8 +1,8 @@
 {
+  config,
   pkgs,
-  lib,
   ...
 }:
 {
-  home.packages = [ pkgs.vlc ];
+  config.home.packages = with pkgs; [ vlc ];
 }

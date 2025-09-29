@@ -1,8 +1,8 @@
 {
+  config,
   pkgs,
-  lib,
   ...
 }:
 {
-  home.packages = [ pkgs.telegram-desktop ];
+  config.home.packages = with pkgs; [ telegram-desktop ];
 }
