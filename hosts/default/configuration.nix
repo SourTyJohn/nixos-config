@@ -45,10 +45,12 @@ in
 
 
     # |---------------------------------------------------------------------------|
-    # |                              <  PROGRAMS  >                               |
+    # |                        <  PROGRAMS + SERVICES  >                          |
     # |---------------------------------------------------------------------------|
-    ../../modules/configuration/zapret.nix
     ../../modules/configuration/steam.nix
+
+    ../../modules/services/zapret.nix
+    ../../modules/services/trillium.nix
   ];
 
 

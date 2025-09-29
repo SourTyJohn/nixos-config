@@ -53,22 +53,22 @@
       # |-------------------------------------------------------------------------|
       # |                            <  REQUIRED  >                               |
       # |-------------------------------------------------------------------------|
-      ../../modules/programs/zsh.nix
-      ../../modules/programs/albert.nix
-      ../../modules/programs/brave.nix
-      ../../modules/programs/browser.nix
-      ../../modules/programs/programming.nix
+      ../../modules/home-programs/zsh.nix
+      ../../modules/home-programs/albert.nix
+      ../../modules/home-programs/brave.nix
+      ../../modules/home-programs/browser.nix
+      ../../modules/home-programs/programming.nix
 
 
       # |-------------------------------------------------------------------------|
       # |                            <  PROGRAMS  >                               |
       # |-------------------------------------------------------------------------|
-      ../../modules/programs/fastfetch.nix
-      ../../modules/programs/gpg.nix
-      ../../modules/programs/obs.nix
-      ../../modules/programs/telegram.nix
-      ../../modules/programs/vlc.nix
-      ../../modules/programs/discord.nix
+      ../../modules/home-programs/fastfetch.nix
+      ../../modules/home-programs/gpg.nix
+      ../../modules/home-programs/obs.nix
+      ../../modules/home-programs/telegram.nix
+      ../../modules/home-programs/vlc.nix
+      ../../modules/home-programs/discord.nix
     ];
 
 
