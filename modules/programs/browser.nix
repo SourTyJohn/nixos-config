@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  programs.firefox = {
+  config.programs.firefox = {
     enable = true;
     # package = pkgs.librewolf;
 
@@ -205,7 +205,7 @@
     };
   };
 
-  programs.librewolf = {
+  config.programs.librewolf = {
     enable = true;
     # Enable WebGL, cookies and history
     settings = {
