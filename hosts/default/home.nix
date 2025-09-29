@@ -68,7 +68,7 @@
       ../../modules/programs/obs.nix
       ../../modules/programs/telegram.nix
       ../../modules/programs/vlc.nix
-#       ../../modules/programs/discord.nix
+      ../../modules/programs/discord.nix
     ];
 
 

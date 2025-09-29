@@ -29,5 +29,6 @@ Config was made with parts from other configs:
 - Firefox + Librewolf
 - Vscode
 - Programming: docker, python, pgadmin, redis, putty, git
-- Steam
+- Steam + proton (Intel CPU / Nvidia GPU)
+- Discord
 - zapret-discord-youtube
