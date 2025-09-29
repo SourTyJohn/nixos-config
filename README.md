@@ -11,7 +11,9 @@
 
 - Install home-manager config:
 `nix-shell -p home-manager`
+
 `home-manager switch --flake /etc/nixos#default`
+
 `exit`
 
 
@@ -20,3 +22,12 @@
 Config was made with parts from other configs:
 - https://github.com/sund3RRR/sunderOS
 - 
+
+
+# Version 5-stable
+
+- Firefox + Librewolf
+- Vscode
+- Programming: docker, python, pgadmin, redis, putty, git
+- Steam
+- zapret-discord-youtube
