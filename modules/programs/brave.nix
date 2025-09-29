@@ -4,7 +4,5 @@
   ...
 }:
 {
-  config = {
-    home.packages = with pkgs; [ brave ];
-  }
+  config.home.packages = with pkgs; [ brave ];
 }

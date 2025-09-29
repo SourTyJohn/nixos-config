@@ -4,7 +4,5 @@
   ...
 }:
 {
-  config = {
-    home.packages = with pkgs; [ discord-canary ];
-  }
+  config.home.packages = with pkgs; [ discord-canary ];
 }
