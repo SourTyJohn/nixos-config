@@ -48,6 +48,7 @@ in
     # |                        <  PROGRAMS + SERVICES  >                          |
     # |---------------------------------------------------------------------------|
     ../../modules/configuration/steam.nix
+    ../../modules/configuration/cursor.nix
 
     ../../modules/services/zapret.nix
     ../../modules/services/trillium.nix

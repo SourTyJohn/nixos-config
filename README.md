@@ -24,7 +24,7 @@ Config was made with parts from other configs:
 - 
 
 
-# Version 5-stable
+# Version 8-stable
 
 - Firefox + Librewolf
 - Vscode
@@ -32,3 +32,5 @@ Config was made with parts from other configs:
 - Steam + proton (Intel CPU / Nvidia GPU)
 - Discord
 - zapret-discord-youtube
+- Trillium
+- cursor AI app
