@@ -12,7 +12,7 @@ in
   config.services.postgresql = {
     enable = true;
     # dataDir = "${userConfig.home-manager-home-dir}/pgdata";
-    package = pkgs.postgresql_${pgversion};
+    package = pkgs."postgresql_${pgversion}";
 
     ensureDatabases = [ "postgres" ];
     ensureUsers = [
