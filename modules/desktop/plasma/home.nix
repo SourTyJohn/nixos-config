@@ -116,7 +116,7 @@ in
       };
 
       virtualDesktops = {
-        number = 4;
+        number = 5;
         rows = 1;
       };
     };
@@ -251,6 +251,7 @@ in
         "Switch to Desktop 2" = "Meta+2";
         "Switch to Desktop 3" = "Meta+3";
         "Switch to Desktop 4" = "Meta+4";
+        "Switch to Desktop 5" = "Meta+5";
         "Window Close" = "Meta+Q";
         "Window Fullscreen" = "Meta+M";
         "Window Move Center" = "Ctrl+Alt+C";
@@ -262,9 +263,9 @@ in
     spectacle = {
       shortcuts = {
         captureEntireDesktop = "";
-        captureRectangularRegion = "";
+        captureRectangularRegion = "PrtSc";
         launch = "";
-        recordRegion = "Meta+Shift+PrtSc";
+        recordRegion = "";
         recordScreen = "";
         recordWindow = "";
       };
