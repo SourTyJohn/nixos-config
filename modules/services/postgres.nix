@@ -8,7 +8,7 @@
   config.services.postgresql = {
     enable = true;
     dataDir = "${userConfig.home-manager-home-dir}/pgdata";
-    package = pkgs.postgresql_18;
+    package = pkgs.postgresql_17;
 
     ensureDatabases = [ "postgres" ];
     ensureUsers = [
