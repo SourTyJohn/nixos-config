@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  config.environment.systemPackages = with pkgs; [ pgadmin ];
+  config.environment.systemPackages = with pkgs; [ pgadmin4 ];
   
   config.services.postgresql = {
     enable = true;
