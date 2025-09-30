@@ -1,7 +1,7 @@
-{ inputs, config, pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
-  services.trilium-server.enable = true;
+  config.services.trilium-server.enable = true;
 
   # default data directory: /var/lib/trilium
   #services.trilium-server.dataDir = "/var/lib/trilium-sync-server";

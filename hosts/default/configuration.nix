@@ -52,6 +52,7 @@ in
 
     ../../modules/services/zapret.nix
     ../../modules/services/trillium.nix
+    ../../modules/services/postgres.nix
   ];
 
 
