@@ -10,7 +10,7 @@
     dataDir = "${userConfig.home-manager-home-dir}/pgdata";
     package = pkgs.postgresql_18;
 
-    ensureDatabases = [ "test" ];
+    ensureDatabases = [ "postgres" ];
     ensureUsers = [
       {
         name = "postgres";
