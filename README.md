@@ -24,11 +24,11 @@ Config was made with parts from other configs:
 - 
 
 
-# Version 8-stable
+# Version 16-stable
 
 - Firefox + Librewolf
 - Vscode
-- Programming: docker, python, pgadmin, redis, putty, git
+- Programming: docker, python, pgadmin4, redis, putty, git
 - Steam + proton (Intel CPU / Nvidia GPU)
 - Discord
 - zapret-discord-youtube

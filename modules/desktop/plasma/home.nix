@@ -50,9 +50,14 @@ in
     };
 
     hotkeys.commands = {
-      launch-terminal = {
-        name = "Launch Terminal";
+      launch-terminal-kitty = {
+        name = "Launch Kitty Terminal";
         key = "Meta+T";
+        command = "kitty";
+      };
+      launch-konsole = {
+        name = "Launch Konsole";
+        key = "Meta+Alt+T";
         command = "konsole";
       };
       screenshot-region = {
