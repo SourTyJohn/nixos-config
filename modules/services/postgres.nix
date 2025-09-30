@@ -11,4 +11,8 @@
       superuser_map      nix      postgres
     '';
   };
+
+  environment.sessionVariables = {
+    PGDATA = "/var/lib/postgresql/16/";
+  };
 }
