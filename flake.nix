@@ -40,11 +40,15 @@
     let
       #  /-------------------------/ Settings \----------------------------\
       userConfig = {
-        nix = {  # username in system
-          isNormalUser = true;
-          description = "Admin";  # displayed username on lock screen
-          extraGroups = [ "networkmanager" "wheel" "docker" ];
+        users = {
+          nix = {  # username in system
+            isNormalUser = true;
+            description = "Admin";  # displayed username on lock screen
+            extraGroups = [ "networkmanager" "wheel" "docker" ];
+          };
         };
+        homeDirs = { nix = "/home/nix"; };
+        home-manager-selected-user = "nix";
       };
       #  \-------------------------\ --------- /----------------------------/
 
@@ -67,7 +71,7 @@
     homeConfigurations = {
       default = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        extraSpecialArgs = { inherit inputs; };
+        extraSpecialArgs = { inherit inputs; inherit userConfig; };
         modules = [
           ./hosts/default/home.nix
           catppuccin.homeModules.catppuccin  # System theme for plasma6

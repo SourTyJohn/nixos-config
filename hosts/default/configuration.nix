@@ -69,7 +69,7 @@ in
   # |-----------------------------------------------------------------------------|
   # |                      <  HOME MANAGER + USER CONFIG  >                       |
   # |-----------------------------------------------------------------------------|
-  users.users = userConfig;  # userConfig defined in flake.nix
+  users.users = userConfig.users;  # userConfig defined in flake.nix
   security.sudo.wheelNeedsPassword = false;  # disable password input for sudo command
 
   # enable zsh shell globally

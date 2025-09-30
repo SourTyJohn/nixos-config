@@ -1,9 +1,14 @@
-{ config, pkgs, ... }:
+{ 
+  config,
+  pkgs,
+  userConfig,
+  ... 
+}:
 
 {
   home = {
-    username = "nix";
-    homeDirectory = "/home/nix";
+    username = userConfig.home-manager-selected-user;
+    homeDirectory = userConfig.homeDirs.${userConfig.home-manager-selected-user};
     stateVersion = "25.05";
 
     packages = with pkgs; [
