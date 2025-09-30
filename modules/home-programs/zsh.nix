@@ -26,4 +26,9 @@
       ];
     };
   };
+  # Ctrl+Left Arrow (move backward a word)
+  # bindkey "^[[1;5D" backward-word
+
+  # Ctrl+Right Arrow (move forward a word)
+  # bindkey "^[[1;5C" forward-word
 }
