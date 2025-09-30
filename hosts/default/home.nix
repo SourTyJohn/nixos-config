@@ -69,6 +69,7 @@
       ../../modules/home-programs/telegram.nix
       ../../modules/home-programs/vlc.nix
       ../../modules/home-programs/discord.nix
+      ../../modules/home-programs/kitty.nix
     ];
 
 
