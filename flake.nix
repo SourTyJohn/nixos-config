@@ -44,7 +44,7 @@
           nix = {  # username in system
             isNormalUser = true;
             description = "Admin";  # displayed username on lock screen
-            extraGroups = [ "networkmanager" "wheel" "docker" ];
+            extraGroups = [ "networkmanager" "wheel" "docker" "postgres" ];
           };
         };
 
