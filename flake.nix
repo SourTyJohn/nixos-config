@@ -47,8 +47,9 @@
             extraGroups = [ "networkmanager" "wheel" "docker" ];
           };
         };
-        homeDirs = { nix = "/home/nix"; };
-        home-manager-selected-user = "nix";
+
+        home-manager-username = "nix";
+        home-manager-home-dir = "/home/nix";
       };
       #  \-------------------------\ --------- /----------------------------/
 

@@ -7,8 +7,9 @@
 
 {
   home = {
-    username = userConfig.home-manager-selected-user;
-    homeDirectory = userConfig.homeDirs.${userConfig.home-manager-selected-user};
+    username = userConfig.home-manager-username;
+    homeDirectory = userConfig.home-manager-home-dir;
+
     stateVersion = "25.05";
 
     packages = with pkgs; [
@@ -30,7 +31,7 @@
   };
 
   # |-----------------------------------------------------------------------------|
-  # |                           <  PACKAGE OVERRIDES  >                            |
+  # |                          <  PACKAGE OVERRIDES  >                            |
   # |-----------------------------------------------------------------------------|
   nixpkgs.overlays = [
     (

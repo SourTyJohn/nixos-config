@@ -1,17 +1,23 @@
-{ config, pkgs, ... }:
+{ config, pkgs, userConfig, ... }:
 
 {
   config.environment = {
     systemPackages = with pkgs; [ pgadmin4 ];
-    sessionVariables = {
-      PGDATA = "/var/lib/postgresql/16/";
-    };
   };
   
   config.services.postgresql = {
     enable = true;
+    dataDir = "${userConfig.home-manager-home-dir}/pgdata";
+    package = pkgs.postgresql_18;
+
     ensureDatabases = [ "test" ];
-  
+    ensureUsers = [
+      {
+        name = "postgres";
+        ensureDBOwnership = true;
+      }
+    ];
+
     identMap = ''
       superuser_map      nix      postgres
     '';
