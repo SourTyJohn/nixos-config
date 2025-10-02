@@ -21,7 +21,7 @@
 
 Config was made with parts from other configs:
 - https://github.com/sund3RRR/sunderOS
-- 
+- https://github.com/AlexNabokikh/nix-config
 
 
 # Version 16-stable

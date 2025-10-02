@@ -130,12 +130,15 @@ in
 
     panels = [
       {
-        alignment = "left";
+        alignment = "center";
         height = 30;
         lengthMode = "fit";
         location = "top";
         opacity = "translucent";
+
         widgets = [
+          { name = "org.kde.plasma.marginseparator"; }
+
           {
             name = "org.dhruv8sh.kara";
             config = {
@@ -151,21 +154,15 @@ in
               };
             };
           }
-        ];
-      }
-      {
-        alignment = "center";
-        height = 30;
-        lengthMode = "fit";
-        location = "top";
-        opacity = "translucent";
-        widgets = [
+          
+          { name = "org.kde.plasma.panelspacer"; }
+
           {
             name = "org.kde.plasma.digitalclock";
             config = {
               Appearance = {
                 autoFontAndSize = false;
-                customDateFormat = "ddd MMMM d";
+                customDateFormat = "ddd | d.MM.yy | MMM";
                 dateDisplayFormat = "BesideTime";
                 dateFormat = "custom";
                 fontSize = 11;
@@ -175,15 +172,9 @@ in
               };
             };
           }
-        ];
-      }
-      {
-        alignment = "right";
-        height = 30;
-        lengthMode = "fit";
-        location = "top";
-        opacity = "translucent";
-        widgets = [
+          
+          { name = "org.kde.plasma.panelspacer"; }
+
           {
             systemTray = {
               icons.scaleToFit = true;
@@ -214,6 +205,9 @@ in
               };
             };
           }
+
+          { name = "org.kde.plasma.marginseparator"; }
+
         ];
       }
     ];
