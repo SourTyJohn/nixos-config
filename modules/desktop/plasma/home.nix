@@ -155,7 +155,7 @@ in
             };
           }
           
-          { name = "org.kde.plasma.panelspacer"; }
+          # { name = "org.kde.plasma.panelspacer"; }
 
           {
             name = "org.kde.plasma.digitalclock";
@@ -173,7 +173,7 @@ in
             };
           }
           
-          { name = "org.kde.plasma.panelspacer"; }
+          # { name = "org.kde.plasma.panelspacer"; }
 
           {
             systemTray = {
