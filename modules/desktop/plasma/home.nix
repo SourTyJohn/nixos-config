@@ -155,7 +155,9 @@ in
             };
           }
 
-          { name = "org.kde.plasma.kickoff"; }
+          { 
+            plasma-panel-spacer-extended 
+          }
   
           {
             name = "org.dhruv8sh.kara";
@@ -173,7 +175,7 @@ in
             };
           }
           
-          { name = "org.kde.plasma.kickoff"; }
+          { name = "org.kde.plasma.panelspacer"; }
 
           {
             systemTray = {
