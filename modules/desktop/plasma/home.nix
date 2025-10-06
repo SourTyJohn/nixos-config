@@ -155,9 +155,7 @@ in
             };
           }
 
-          { 
-            plasma-panel-spacer-extended 
-          }
+          { name = "org.kde.plasma.panelspacer"; }
   
           {
             name = "org.dhruv8sh.kara";

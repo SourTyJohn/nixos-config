@@ -27,6 +27,10 @@
       kdePackages.krohnkite
       kdotool
       tela-circle-icon-theme
+
+      # panel spacer widget
+      pkgs.plasma-panel-spacer-extended
+
     ];
   };
 
