@@ -64,18 +64,19 @@
         # Tools available in the shell
         buildInputs = [
           pkgs.bash
-          pkgs.python313
+          pkgs.python312
           pkgs.poetry
           pkgs.pkg-config
           pkgs.libmysqlclient
-          pkgs.python313Packages.setuptools
+          pkgs.python312Packages.setuptools
           pkgs.libGL
           pkgs.stdenv.cc.cc.lib
         ];
 
         # Commands to run when the shell starts
         shellHook = ''
-          echo "Python development shell"
+          echo "Python development shell:"
+          poetry show
         '';
       };
 
