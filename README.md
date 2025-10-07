@@ -3,16 +3,16 @@
 
 ## Installation
 
-- Copy repo to /etc/nixos
+- Copy repo to ~/Documents/nix-config/nixos
 - Replace hosts/default/hardware-configuration.nix with auto-generated /etc/nixos/hardware-configuration.nix
 
 - Install nixos config:
-`sudo nixos-rebuild switch --flake /etc/nixos#default`
+`sudo nixos-rebuild switch --flake ~/Documents/nix-config/nixos#default`
 
 - Install home-manager config:
 `nix-shell -p home-manager`
 
-`home-manager switch --flake /etc/nixos#default`
+`home-manager switch --flake ~/Documents/nix-config/nixos#default`
 
 `exit`
 
@@ -34,3 +34,9 @@ Config was made with parts from other configs:
 - zapret-discord-youtube
 - Trillium
 - cursor AI app
+
+
+# zsh aliases
+
+`python-shell` : starts python dev shell
+ 
