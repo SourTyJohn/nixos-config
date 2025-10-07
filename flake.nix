@@ -59,23 +59,30 @@
     in
     {
     
-    devShells.x86_64-linux.default = pkgs.mkShell {
-      # Tools available in the shell
-      buildInputs = [
-        pkgs.python312
-        pkgs.poetry
-        pkgs.pkg-config
-        pkgs.libmysqlclient
-        pkgs.python312Packages.setuptools
-        pkgs.nodejs
-        pkgs.libGL
-        pkgs.stdenv.cc.cc.lib
-      ];
+    devShells.${system} = {
+      backend = pkgs.mkShell {
+        # Tools available in the shell
+        buildInputs = [
+          pkgs.python313
+          pkgs.poetry
+          pkgs.pkg-config
+          pkgs.libmysqlclient
+          pkgs.python313Packages.setuptools
+          pkgs.libGL
+          pkgs.stdenv.cc.cc.lib
+        ];
 
-      # Commands to run when the shell starts
-      shellHook = ''
-        echo "Python development shell"
-      '';
+        # Commands to run when the shell starts
+        shellHook = ''
+          echo "Python development shell"
+        '';
+      };
+
+      default = pkgs.mkShell {
+        inputsFrom = [
+          self.devShells.${system}.backend
+        ];
+      };
     };
 
     nixosConfigurations = {
