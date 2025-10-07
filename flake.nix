@@ -63,6 +63,7 @@
       backend = pkgs.mkShell {
         # Tools available in the shell
         buildInputs = [
+          pkgs.bash
           pkgs.python313
           pkgs.poetry
           pkgs.pkg-config
