@@ -62,24 +62,29 @@
     devShells.${system} = {
       backend = pkgs.mkShell {
         # Tools available in the shell
-        buildInputs = [
-          pkgs.bash
+        buildInputs = with pkgs; [
+          bash
 
-          pkgs.python312
-          pkgs.python312Packages.pip
-          pkgs.python312Packages.setuptools
+          openblas
 
-          pkgs.poetry
-          pkgs.pkg-config
-          pkgs.libmysqlclient
-          pkgs.libGL
-          pkgs.stdenv.cc.cc.lib
+          python312
+          python312Packages.pip
+          python312Packages.wheel
+          python312Packages.setuptools
+
+          poetry
+          pkg-config
+          libmysqlclient
+          libGL
+          stdenv.cc.cc.lib
         ];
 
         # Commands to run when the shell starts
         shellHook = ''
           echo "Python development shell:"
-          poetry show
+          python3 --version
+          echo ""
+          pip3 list
         '';
       };
 
