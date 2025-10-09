@@ -24,7 +24,7 @@ Config was made with parts from other configs:
 - https://github.com/AlexNabokikh/nix-config
 
 
-# Version 16-stable
+# Version 40-stable
 
 - Firefox + Librewolf
 - Vscode
@@ -34,6 +34,9 @@ Config was made with parts from other configs:
 - zapret-discord-youtube
 - Trillium
 - cursor AI app
+- LibreOffice
+
+- python-shell: command for entering developers python shell
 
 
 # zsh aliases

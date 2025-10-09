@@ -49,6 +49,7 @@ in
     # |---------------------------------------------------------------------------|
     ../../modules/configuration/steam.nix
     ../../modules/configuration/cursor.nix
+    ../../modules/configuration/libreoffice.nix
 
     ../../modules/services/zapret.nix
     ../../modules/services/trillium.nix
