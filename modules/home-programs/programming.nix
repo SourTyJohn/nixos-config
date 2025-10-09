@@ -8,6 +8,8 @@
     # Packages for programming
     home.packages = with pkgs; [
       python3
+      python312
+
       docker
       putty
       redis
