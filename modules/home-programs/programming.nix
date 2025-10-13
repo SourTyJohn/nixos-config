@@ -72,7 +72,7 @@ in
               ms-python.vscode-pylance
               charliermarsh.ruff
               # html
-              ecmel.vscode-html-css
+              # ecmel.vscode-html-css
               # general
               ms-azuretools.vscode-docker
               mhutchie.git-graph
