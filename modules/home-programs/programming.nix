@@ -41,7 +41,7 @@ in
     home.packages = with pkgs; [
       # python
       python3
-      python312
+      # python312
 
       # web-development
       docker
