@@ -102,6 +102,8 @@ in
     wayland-utils # Wayland utilities
     wl-clipboard # Command-line copy/paste utilities for Wayland
     openblas
+    # utils
+    p7zip # archive manager
   ];
 
 

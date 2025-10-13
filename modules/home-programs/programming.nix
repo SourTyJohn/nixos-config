@@ -7,13 +7,18 @@
   config = {
     # Packages for programming
     home.packages = with pkgs; [
+      # python
       python3
       python312
 
+      # web-development
       docker
       putty
       redis
-      
+
+      # php
+      php
+
       # do not remove
       git
     ];
@@ -31,9 +36,12 @@
           ms-python.python
           ms-python.vscode-pylance
           charliermarsh.ruff
+          # html
+          ecmel.vscode-html-css
           # general
           ms-azuretools.vscode-docker
           mhutchie.git-graph
+          github.vscode-github-actions
         ];
         profiles.default.userSettings = {
           "editor.letterSpacing" = 0.1;
@@ -66,6 +74,18 @@
           };
         };
       };
+
+      profiles.golang.userSettings = profiles.default.userSettings;
+      profiles.golang.extensions = with pkgs.vscode-extensions; [
+          # golang
+          golang.go
+          # html
+          ecmel.vscode-html-css
+          # general
+          ms-azuretools.vscode-docker
+          mhutchie.git-graph
+          github.vscode-github-actions
+        ];
 
         # Git
       git = {
