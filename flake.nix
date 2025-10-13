@@ -88,6 +88,24 @@
         '';
       };
 
+      golang = pkgs.mkShell {
+        buildInputs = with pkgs; [
+          go_1_22
+          golangci-lint
+          gotools
+          go-junit-report
+          gocover-cobertura
+          go-task
+          goreleaser
+          sqlc
+          docker-compose
+        ];
+        shellHook = ''
+          echo "Golang development shell:"
+          go version
+        '';
+      };
+
       default = pkgs.mkShell {
         inputsFrom = [
           self.devShells.${system}.backend
