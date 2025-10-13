@@ -53,6 +53,10 @@ in
 
       # do not remove
       git
+
+      # java
+      jdk
+      spring-boot-cli
     ];
 
     programs = {
