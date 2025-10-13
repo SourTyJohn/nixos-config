@@ -3,6 +3,38 @@
   pkgs,
   ...
 }:
+let
+  vscodeUserSettings = {
+    "editor.letterSpacing" = 0.1;
+    "editor.fontSize" = 14;
+    "terminal.integrated.gpuAcceleration" = "on";
+    "gitlens.hovers.annotations.details" = false;
+    "explorer.fileNesting.expand" = false;
+    "explorer.compactFolders" = false;
+    "explorer.autoReveal" = false;
+
+    "python.analysis.typeCheckingMode" = "standard";
+    "ruff.enable" = true;
+    "ruff.lineLength" = 79;
+    "ruff.lint.enable" = true;
+    "[python]" = {
+      "editor.formatOnSave" = true;
+      "editor.defaultFormatter" = "charliermarsh.ruff";
+      "editor.codeActionsOnSave" = {
+          "source.fixAll" = "explicit";
+      };
+    };
+
+    "files.exclude" = {
+        "/.git" = true;
+        "pycache" = true;
+        "**/__pycache__" = true;
+        "typings" = false;
+        ".idea" = true;
+        "common" = false;
+    };
+  };
+in
 {
   config = {
     # Packages for programming
@@ -27,66 +59,43 @@
       # Install and configure vscode
       vscode = {
         enable = true;
-        profiles.default.extensions = with pkgs.vscode-extensions; [
-          # nix lang support
-          jnoortheen.nix-ide
-          arrterian.nix-env-selector
-          mkhl.direnv
-          # python
-          ms-python.python
-          ms-python.vscode-pylance
-          charliermarsh.ruff
-          # html
-          ecmel.vscode-html-css
-          # general
-          ms-azuretools.vscode-docker
-          mhutchie.git-graph
-          github.vscode-github-actions
-        ];
-        profiles.default.userSettings = {
-          "editor.letterSpacing" = 0.1;
-          "editor.fontSize" = 14;
-          "terminal.integrated.gpuAcceleration" = "on";
-          "gitlens.hovers.annotations.details" = false;
-          "explorer.fileNesting.expand" = false;
-          "explorer.compactFolders" = false;
-          "explorer.autoReveal" = false;
 
-          "python.analysis.typeCheckingMode" = "standard";
-          "ruff.enable" = true;
-          "ruff.lineLength" = 79;
-          "ruff.lint.enable" = true;
-          "[python]" = {
-            "editor.formatOnSave" = true;
-            "editor.defaultFormatter" = "charliermarsh.ruff";
-            "editor.codeActionsOnSave" = {
-                "source.fixAll" = "explicit";
-            };
+        profiles = {
+          default = {
+            extensions = with pkgs.vscode-extensions; [
+              # nix lang support
+              jnoortheen.nix-ide
+              arrterian.nix-env-selector
+              mkhl.direnv
+              # python
+              ms-python.python
+              ms-python.vscode-pylance
+              charliermarsh.ruff
+              # html
+              ecmel.vscode-html-css
+              # general
+              ms-azuretools.vscode-docker
+              mhutchie.git-graph
+              github.vscode-github-actions
+            ];
+            userSettings = vscodeUserSettings;
           };
 
-          "files.exclude" = {
-              "/.git" = true;
-              "pycache" = true;
-              "**/__pycache__" = true;
-              "typings" = false;
-              ".idea" = true;
-              "common" = false;
+          golang = {
+            extensions = with pkgs.vscode-extensions; [
+              # golang
+              golang.go
+              # html
+              ecmel.vscode-html-css
+              # general
+              ms-azuretools.vscode-docker
+              mhutchie.git-graph
+              github.vscode-github-actions
+            ];
+            userSettings = vscodeUserSettings;
           };
         };
       };
-
-      profiles.golang.userSettings = profiles.default.userSettings;
-      profiles.golang.extensions = with pkgs.vscode-extensions; [
-          # golang
-          golang.go
-          # html
-          ecmel.vscode-html-css
-          # general
-          ms-azuretools.vscode-docker
-          mhutchie.git-graph
-          github.vscode-github-actions
-        ];
-
         # Git
       git = {
         enable = true;
