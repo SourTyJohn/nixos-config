@@ -15,7 +15,8 @@
     shellAliases = {
       ll = "ls -l";
       update = "sudo nixos-rebuild switch";
-      python-shell = "nix develop ~/Documents/nix-config/nixos";
+      python-shell = "nix develop ~/Documents/nix-config/nixos#default";
+      go-shell = "nix develop ~/Documents/nix-config/nixos#golang"
     };
     history.size = 10000;
 

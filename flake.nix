@@ -90,11 +90,10 @@
 
       golang = pkgs.mkShell {
         buildInputs = with pkgs; [
-          go_1_22
+          go
           golangci-lint
           gotools
           go-junit-report
-          gocover-cobertura
           go-task
           goreleaser
           sqlc
