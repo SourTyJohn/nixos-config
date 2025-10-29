@@ -54,6 +54,7 @@ in
     ../../modules/services/zapret.nix
     ../../modules/services/trillium.nix
     ../../modules/services/postgres.nix
+    ../../modules/services/drive-monitoring.nix
   ];
 
 
@@ -105,7 +106,6 @@ in
     # utils
     p7zip # archive manager
 
-    smartctl
     fsck
   ];
 
