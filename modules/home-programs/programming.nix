@@ -61,45 +61,45 @@ in
 
     programs = {
       # Install and configure vscode
-      vscode = {
-        enable = true;
+      # vscode = {
+      #   enable = true;
 
-        profiles = {
-          default = {
-            extensions = with pkgs.vscode-extensions; [
-              # nix lang support
-              jnoortheen.nix-ide
-              arrterian.nix-env-selector
-              mkhl.direnv
-              # python
-              ms-python.python
-              ms-python.vscode-pylance
-              charliermarsh.ruff
-              # html
-              ecmel.vscode-html-css
-              # general
-              ms-azuretools.vscode-docker
-              mhutchie.git-graph
-              github.vscode-github-actions
-            ];
-            userSettings = vscodeUserSettings;
-          };
+      #   profiles = {
+      #     default = {
+      #       extensions = with pkgs.vscode-extensions; [
+      #         # nix lang support
+      #         jnoortheen.nix-ide
+      #         arrterian.nix-env-selector
+      #         mkhl.direnv
+      #         # python
+      #         ms-python.python
+      #         ms-python.vscode-pylance
+      #         charliermarsh.ruff
+      #         # html
+      #         ecmel.vscode-html-css
+      #         # general
+      #         ms-azuretools.vscode-docker
+      #         mhutchie.git-graph
+      #         github.vscode-github-actions
+      #       ];
+      #       userSettings = vscodeUserSettings;
+      #     };
 
-          golang = {
-            extensions = with pkgs.vscode-extensions; [
-              # golang
-              golang.go
-              # html
-              ecmel.vscode-html-css
-              # general
-              ms-azuretools.vscode-docker
-              mhutchie.git-graph
-              github.vscode-github-actions
-            ];
-            userSettings = vscodeUserSettings;
-          };
-        };
-      };
+      #     golang = {
+      #       extensions = with pkgs.vscode-extensions; [
+      #         # golang
+      #         golang.go
+      #         # html
+      #         ecmel.vscode-html-css
+      #         # general
+      #         ms-azuretools.vscode-docker
+      #         mhutchie.git-graph
+      #         github.vscode-github-actions
+      #       ];
+      #       userSettings = vscodeUserSettings;
+      #     };
+      #   };
+      # };
         # Git
       git = {
         enable = true;
