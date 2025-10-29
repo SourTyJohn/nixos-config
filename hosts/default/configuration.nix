@@ -105,8 +105,6 @@ in
     openblas
     # utils
     p7zip # archive manager
-
-    fsck
   ];
 
 
