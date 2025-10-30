@@ -5,8 +5,12 @@
 }:
 let
   vscodeUserSettings = {
+    #  if your have it installed
+    "workbench.iconTheme" = "material-icon-theme";
+    "workbench.colorTheme" = "Dark Modern";
+
     "editor.letterSpacing" = 0.1;
-    "editor.fontSize" = 14;
+    "editor.fontSize" = 15;
     "terminal.integrated.gpuAcceleration" = "on";
     "gitlens.hovers.annotations.details" = false;
     "explorer.fileNesting.expand" = false;
