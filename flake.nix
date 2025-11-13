@@ -77,6 +77,8 @@
           libmysqlclient
           libGL
           stdenv.cc.cc.lib
+
+          python312Packages.greenlet
         ];
 
         # Commands to run when the shell starts
