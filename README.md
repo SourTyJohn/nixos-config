@@ -17,29 +17,45 @@
 `exit`
 
 
-# Thanks!
+## Thanks!
 
 Config was made with parts from other configs:
 - https://github.com/sund3RRR/sunderOS
 - https://github.com/AlexNabokikh/nix-config
 
 
-# Version 40-stable
+## Programs
+
+os/programs updated: 11 november 2025
+
+#### General
 
 - Firefox + Librewolf
-- Vscode
-- Programming: docker, python, pgadmin4, redis, putty, git
-- Steam + proton (Intel CPU / Nvidia GPU)
 - Discord
-- zapret-discord-youtube
-- Trillium
-- cursor AI app
 - LibreOffice
+- Steam + proton (Intel CPU / Nvidia GPU)
+- Trillium
+- zapret-discord-youtube
+- OBS
+- Telegram
+- VLC player
 
-- python-shell: command for entering developers python shell
+#### Code
 
+- Vscode + 2 profiles: for python and golang 
+- Docker
+- Python 3.13.9; 
+- Postgres service + pgadmin4;
+- Cursor app
 
-# zsh aliases
+#### zsh aliases
 
 `python-shell` : starts python dev shell
- 
+`go-shell` : starts golang dev shell
+
+
+# ![pic](git-images/vscode.png "Vscode")
+
+# ![pic](git-images/firefox.png "Firefox")
+
+# ![pic](git-images/albert.png "Albert")
