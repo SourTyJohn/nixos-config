@@ -23,7 +23,8 @@ in
     # eufi
     loader.efi.canTouchEfiVariables = true;
 
-    kernelPackages = pkgs.linuxKernel.packages.linux_6_16;
+    # LINUX KERNEL VERSION
+    kernelPackages = pkgs.linuxPackages_latest;
     kernelParams = ["splash"];
 
     # 

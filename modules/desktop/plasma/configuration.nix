@@ -17,7 +17,7 @@
     elisa
     khelpcenter
     krdp
-    xwaylandvideobridge
+    # xwaylandvideobridge
     plasma-browser-integration
   ];
 

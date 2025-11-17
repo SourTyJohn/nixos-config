@@ -11,7 +11,7 @@
   };
   environment.systemPackages = with pkgs; [
     mangohud
-    protonup
+    protonup-ng
   ];
   environment.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOLS_PATHS =

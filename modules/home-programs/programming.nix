@@ -108,8 +108,10 @@ in
         # Git
       git = {
         enable = true;
-        userName = "SourTyJohn";
-        userEmail = "mr.ukhov@list.ru";
+        settings.user = {
+          name = "SourTyJohn";
+          email = "mr.ukhov@list.ru";
+        };
       };
     };
   };
